@@ -3,7 +3,7 @@
   <!-- <h1 class="page-header text-center">Question and Answer</h1> -->
    <div id="row">
      <ul>
-       {{#each question in this}}
+       {{#each question in model}}
          <li>
            {{#link-to 'question' question.id}}{{question.title}} by {{question.author}}{{/link-to}}
          </li>
