@@ -1,0 +1,17 @@
+<!-- <h1 class="page-header text-center">Enter a Question</h1> -->
+<h1>Enter a Question</h1>
+
+<form>
+  <div class="form-group">
+    <label for="text">Enter a brief description of your question:</label>
+    {{input value=question-title id="question-title" class="form-control"}}
+    <label for="text">Enter your question in full: </label>
+    {{textarea value=question-description id="question-description" class="form-control"}}
+    <label for="text">Who's asking?: </label>
+    {{input value=question-author id="question-author" class="form-control"}}
+  </div>
+
+  <button class="btn btn-primary" {{action "save"}}>Ask</button>
+</form>
+
+{{outlet}}

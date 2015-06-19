@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Question and Answer</h1>
+  <!-- <h1 class="page-header text-center">Question and Answer</h1> -->
+   <div id="row">
+     <ul>
+       {{#each question in this}}
+         <li>
+           {{#link-to 'question' question.id}}{{question.title}} by {{question.author}}{{/link-to}}
+         </li>
+       {{/each}}
+     </ul>
+   </div>
+   <div class="text-center">
+     {{#link-to 'new-question' classNames="btn btn-primary"}}Add Question{{/link-to}}
+   </div>
+</div>
+
+
+{{outlet}}

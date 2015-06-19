@@ -1,0 +1,13 @@
+<!-- <h1 class="page-header text-center">Answer</h1> -->
+<h1>Answer</h1>
+
+<form>
+  <div class="form-group">
+    <label for="answer-description">Provide your answer here:</label>
+    {{textarea value=answer-description id="answer-description" class="form-control"}}
+  </div>
+
+  <button class="btn btn-primary" {{action "save"}}>Add your answer</button>
+</form>
+
+{{outlet}}
