@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
         title: this.get('question-title'),
         author: this.get('question-author')
       });
-      this.set('answers', [])
+      this.set('answers', []);
       newQuestion.save();
       this.transitionToRoute('questions');
     }
