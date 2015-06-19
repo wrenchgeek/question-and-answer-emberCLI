@@ -1,4 +1,6 @@
-QAndA.QuestionController = Ember.ObjectController.extend({
+import Ember from 'ember';
+
+export default Ember.ObjectController.extend({
   isEditing: false,
   actions: {
     edit: function() {
